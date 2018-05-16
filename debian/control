@@ -7,7 +7,7 @@ Uploaders:
  Andreas Beckmann <anbe@debian.org>,
  Vincent Cheng <vcheng@debian.org>
 Build-Depends: debhelper (>= 9),
- linux-headers-4.9.0-6-amd64 [i386 amd64], linux-headers-4.9.0-6-586 [i386], linux-headers-4.9.0-6-686-pae [i386],
+ linux-headers-4.9.0-6-686 [i386], linux-headers-4.9.0-6-686-pae [i386], linux-headers-4.9.0-6-amd64 [amd64],
  nvidia-kernel-source (>= 390.48), nvidia-kernel-source (<< 390.48.~),
 Standards-Version: 3.9.6
 Homepage: http://www.nvidia.com/
@@ -37,40 +37,22 @@ Replaces: nvidia-kernel-2.6-486
 Description: NVIDIA kernel module for Linux (dummy package)
  This is a dummy transitional package.  It can be safely removed.
 
-Package: nvidia-kernel-amd64
-Architecture: i386 amd64
-Depends: ${misc:Depends}, nvidia-kernel-4.9.0-6-amd64 (>= 390.48)
-Conflicts: nvidia-kernel-2.6-amd64
-Replaces: nvidia-kernel-2.6-amd64
-Description: NVIDIA kernel module for Linux (amd64 flavor)
+Package: nvidia-kernel-686
+Architecture: i386
+Depends: ${misc:Depends}, nvidia-kernel-4.9.0-6-686 (>= 390.48)
+Conflicts: nvidia-kernel-2.6-686
+Replaces: nvidia-kernel-2.6-686
+Description: NVIDIA kernel module for Linux (686 flavor)
  This is a metapackage that will depend on the latest version of the
- NVIDIA kernel module for the Linux kernel series (amd64 flavor).
+ NVIDIA kernel module for the Linux kernel series (686 flavor).
  Install this package to automatically install the latest NVIDIA module
  when new versions of the kernel are released.
 
-Package: nvidia-kernel-4.9.0-6-amd64
-Architecture: i386 amd64
-Depends: ${misc:Depends}
-Description: NVIDIA binary kernel module (amd64 flavor)
- This is a dummy control entry (amd64 flavor).
- The description in the final package will come from its control.template.
-
-Package: nvidia-kernel-586
-Architecture: i386
-Depends: ${misc:Depends}, nvidia-kernel-4.9.0-6-586 (>= 390.48)
-Conflicts: nvidia-kernel-2.6-586
-Replaces: nvidia-kernel-2.6-586
-Description: NVIDIA kernel module for Linux (586 flavor)
- This is a metapackage that will depend on the latest version of the
- NVIDIA kernel module for the Linux kernel series (586 flavor).
- Install this package to automatically install the latest NVIDIA module
- when new versions of the kernel are released.
-
-Package: nvidia-kernel-4.9.0-6-586
+Package: nvidia-kernel-4.9.0-6-686
 Architecture: i386
 Depends: ${misc:Depends}
-Description: NVIDIA binary kernel module (586 flavor)
- This is a dummy control entry (586 flavor).
+Description: NVIDIA binary kernel module (686 flavor)
+ This is a dummy control entry (686 flavor).
  The description in the final package will come from its control.template.
 
 Package: nvidia-kernel-686-pae
@@ -89,4 +71,22 @@ Architecture: i386
 Depends: ${misc:Depends}
 Description: NVIDIA binary kernel module (686-pae flavor)
  This is a dummy control entry (686-pae flavor).
+ The description in the final package will come from its control.template.
+
+Package: nvidia-kernel-amd64
+Architecture: amd64
+Depends: ${misc:Depends}, nvidia-kernel-4.9.0-6-amd64 (>= 390.48)
+Conflicts: nvidia-kernel-2.6-amd64
+Replaces: nvidia-kernel-2.6-amd64
+Description: NVIDIA kernel module for Linux (amd64 flavor)
+ This is a metapackage that will depend on the latest version of the
+ NVIDIA kernel module for the Linux kernel series (amd64 flavor).
+ Install this package to automatically install the latest NVIDIA module
+ when new versions of the kernel are released.
+
+Package: nvidia-kernel-4.9.0-6-amd64
+Architecture: amd64
+Depends: ${misc:Depends}
+Description: NVIDIA binary kernel module (amd64 flavor)
+ This is a dummy control entry (amd64 flavor).
  The description in the final package will come from its control.template.
