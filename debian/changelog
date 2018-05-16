@@ -1,3 +1,9 @@
+nvidia-graphics-modules (390.48+4.9.0+0sci9+nv390u2) scibian9+nv390; urgency=medium
+
+  * Fix try for i386 build
+
+ -- Rémi Palancher <remi-externe.palancher@edf.fr>  Wed, 16 May 2018 10:02:32 +0200
+
 nvidia-graphics-modules (390.48+4.9.0+0sci9+nv390u1) scibian9+nv390; urgency=medium
 
   * Initial release for scibian9+nv390
