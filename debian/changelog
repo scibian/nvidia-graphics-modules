@@ -1,3 +1,9 @@
+nvidia-graphics-modules (390.48+4.9.0+0sci9+nv390u3) scibian9+nv390; urgency=medium
+
+  * Bump Kernel 4.9 ABI to 7
+
+ -- Thomas HAMEL <thomas-externe.hamel@edf.fr>  Thu, 26 Jul 2018 10:46:03 +0200
+
 nvidia-graphics-modules (390.48+4.9.0+0sci9+nv390u2) scibian9+nv390; urgency=medium
 
   * Fix try for i386 build
