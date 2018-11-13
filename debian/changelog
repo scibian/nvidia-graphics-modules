@@ -1,20 +1,8 @@
-nvidia-graphics-modules (390.48+4.9.0+0sci9+nv390u3) scibian9+nv390; urgency=medium
+nvidia-graphics-modules (410.73+3.16.0+0sci8+nv410u1) scibian8+nv410; urgency=medium
 
-  * Bump Kernel 4.9 ABI to 7
+  * Initial release for scibian8+nv410.
 
- -- Thomas HAMEL <thomas-externe.hamel@edf.fr>  Thu, 26 Jul 2018 10:46:03 +0200
-
-nvidia-graphics-modules (390.48+4.9.0+0sci9+nv390u2) scibian9+nv390; urgency=medium
-
-  * Fix try for i386 build
-
- -- Rémi Palancher <remi-externe.palancher@edf.fr>  Wed, 16 May 2018 10:02:32 +0200
-
-nvidia-graphics-modules (390.48+4.9.0+0sci9+nv390u1) scibian9+nv390; urgency=medium
-
-  * Initial release for scibian9+nv390
-
- -- Rémi Palancher <remi-externe.palancher@edf.fr>  Wed, 16 May 2018 09:29:33 +0200
+ -- Rémi Palancher <remi-externe.palancher@edf.fr>  Wed, 07 Nov 2018 11:48:55 +0100
 
 nvidia-graphics-modules (340.65+3.16.0+1) unstable; urgency=medium
 

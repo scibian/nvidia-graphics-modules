@@ -7,8 +7,8 @@ Uploaders:
  Andreas Beckmann <anbe@debian.org>,
  Vincent Cheng <vcheng@debian.org>
 Build-Depends: debhelper (>= 9),
- linux-headers-4.9.0-7-686 [i386], linux-headers-4.9.0-7-686-pae [i386], linux-headers-4.9.0-7-amd64 [amd64],
- nvidia-kernel-source (>= 390.48), nvidia-kernel-source (<< 390.48.~),
+ linux-headers-3.16.0-5-686 [i386], linux-headers-3.16.0-5-686-pae [i386], linux-headers-3.16.0-5-amd64 [amd64],
+ nvidia-kernel-source (>= 410.73), nvidia-kernel-source (<< 410.73.~),
 Standards-Version: 3.9.6
 Homepage: http://www.nvidia.com/
 Vcs-Git: https://github.com/scibian/nvidia-graphics-modules.git
@@ -18,7 +18,7 @@ XS-Autobuild: yes
 Package: nvidia-kernel-dummy
 Architecture: amd64
 Priority: extra
-Depends: nvidia-kernel-source (>= 390.48), ${misc:Depends}
+Depends: nvidia-kernel-source (>= 410.73), ${misc:Depends}
 Description: NVIDIA kernel module for Linux 2.6 (dummy package)
  This dummy package exists solely to ensure that the prebuilt modules do not
  migrate to testing before the corresponding driver is available. Nothing is
@@ -39,7 +39,7 @@ Description: NVIDIA kernel module for Linux (dummy package)
 
 Package: nvidia-kernel-686
 Architecture: i386
-Depends: ${misc:Depends}, nvidia-kernel-4.9.0-7-686 (>= 390.48)
+Depends: ${misc:Depends}, nvidia-kernel-3.16.0-5-686 (>= 410.73)
 Conflicts: nvidia-kernel-2.6-686
 Replaces: nvidia-kernel-2.6-686
 Description: NVIDIA kernel module for Linux (686 flavor)
@@ -48,7 +48,7 @@ Description: NVIDIA kernel module for Linux (686 flavor)
  Install this package to automatically install the latest NVIDIA module
  when new versions of the kernel are released.
 
-Package: nvidia-kernel-4.9.0-7-686
+Package: nvidia-kernel-3.16.0-5-686
 Architecture: i386
 Depends: ${misc:Depends}
 Description: NVIDIA binary kernel module (686 flavor)
@@ -57,7 +57,7 @@ Description: NVIDIA binary kernel module (686 flavor)
 
 Package: nvidia-kernel-686-pae
 Architecture: i386
-Depends: ${misc:Depends}, nvidia-kernel-4.9.0-7-686-pae (>= 390.48)
+Depends: ${misc:Depends}, nvidia-kernel-3.16.0-5-686-pae (>= 410.73)
 Conflicts: nvidia-kernel-2.6-686-pae
 Replaces: nvidia-kernel-2.6-686-pae
 Description: NVIDIA kernel module for Linux (686-pae flavor)
@@ -66,7 +66,7 @@ Description: NVIDIA kernel module for Linux (686-pae flavor)
  Install this package to automatically install the latest NVIDIA module
  when new versions of the kernel are released.
 
-Package: nvidia-kernel-4.9.0-7-686-pae
+Package: nvidia-kernel-3.16.0-5-686-pae
 Architecture: i386
 Depends: ${misc:Depends}
 Description: NVIDIA binary kernel module (686-pae flavor)
@@ -75,7 +75,7 @@ Description: NVIDIA binary kernel module (686-pae flavor)
 
 Package: nvidia-kernel-amd64
 Architecture: amd64
-Depends: ${misc:Depends}, nvidia-kernel-4.9.0-7-amd64 (>= 390.48)
+Depends: ${misc:Depends}, nvidia-kernel-3.16.0-5-amd64 (>= 410.73)
 Conflicts: nvidia-kernel-2.6-amd64
 Replaces: nvidia-kernel-2.6-amd64
 Description: NVIDIA kernel module for Linux (amd64 flavor)
@@ -84,7 +84,7 @@ Description: NVIDIA kernel module for Linux (amd64 flavor)
  Install this package to automatically install the latest NVIDIA module
  when new versions of the kernel are released.
 
-Package: nvidia-kernel-4.9.0-7-amd64
+Package: nvidia-kernel-3.16.0-5-amd64
 Architecture: amd64
 Depends: ${misc:Depends}
 Description: NVIDIA binary kernel module (amd64 flavor)
