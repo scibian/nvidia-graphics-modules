@@ -12,7 +12,7 @@ Description: #DESC_NAME# kernel module for Linux (#FLAVOR# flavor)
 
 Package: #MODULE#-#KERNEL#-#FLAVOR#
 Architecture: #ARCH#
-Depends: ${misc:Depends}
+Depends: linux-image-3.16.0-5-amd64, nvidia-kernel-support (>= 410.73)
 Description: #DESC_NAME# binary kernel module (#FLAVOR# flavor)
  This is a dummy control entry (#FLAVOR# flavor).
  The description in the final package will come from its control.template.
