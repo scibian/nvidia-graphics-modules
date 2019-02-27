@@ -1,3 +1,9 @@
+nvidia-graphics-modules (410.73+3.16.0+0sci8+nv410u4) scibian8+nv410; urgency=medium
+
+  *modify checksum for changer file control.flavor
+
+ -- MHamed Bouaziz <mhamed-externe.bouaziz@edf.fr>  Wed, 27 Feb 2019 17:43:40 +0100
+
 nvidia-graphics-modules (410.73+3.16.0+0sci8+nv410u3) scibian8+nv410; urgency=medium
 
   * fix apt bug because of virtual package that ends with --v1
