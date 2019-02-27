@@ -86,7 +86,7 @@ Description: NVIDIA kernel module for Linux (amd64 flavor)
 
 Package: nvidia-kernel-3.16.0-5-amd64
 Architecture: amd64
-Depends: ${misc:Depends}
+Depends: linux-image-3.16.0-5-amd64, nvidia-kernel-support (>= 410.73)
 Description: NVIDIA binary kernel module (amd64 flavor)
  This is a dummy control entry (amd64 flavor).
  The description in the final package will come from its control.template.
