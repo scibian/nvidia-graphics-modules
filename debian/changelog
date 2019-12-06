@@ -1,3 +1,9 @@
+nvidia-graphics-modules (440.36+3.16.0+0sci8+nv440u1) scibian8+nv440; urgency=medium
+
+  * Use nvidia-kernel-source 440.36
+
+ -- Cristian RUIZ <cristian-externe.ruiz@edf.fr>  Fri, 06 Dec 2019 09:38:18 +0100
+
 nvidia-graphics-modules (410.73+3.16.0+0sci8+nv410u4) scibian8+nv410; urgency=medium
 
   *modify checksum for changer file control.flavor
