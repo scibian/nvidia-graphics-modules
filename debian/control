@@ -8,7 +8,7 @@ Uploaders:
  Vincent Cheng <vcheng@debian.org>
 Build-Depends: debhelper (>= 9),
  linux-headers-3.16.0-5-686 [i386], linux-headers-3.16.0-5-686-pae [i386], linux-headers-3.16.0-5-amd64 [amd64],
- nvidia-kernel-source (>= 410.73), nvidia-kernel-source (<< 410.73.~),
+ nvidia-kernel-source (>= 440.36), nvidia-kernel-source (<< 440.36.~),
 Standards-Version: 3.9.6
 Homepage: http://www.nvidia.com/
 Vcs-Git: https://github.com/scibian/nvidia-graphics-modules.git
@@ -39,7 +39,7 @@ Description: NVIDIA kernel module for Linux (dummy package)
 
 Package: nvidia-kernel-686
 Architecture: i386
-Depends: ${misc:Depends}, nvidia-kernel-3.16.0-5-686 (>= 410.73)
+Depends: ${misc:Depends}, nvidia-kernel-3.16.0-5-686 (>= 440.36)
 Conflicts: nvidia-kernel-2.6-686
 Replaces: nvidia-kernel-2.6-686
 Description: NVIDIA kernel module for Linux (686 flavor)
@@ -57,7 +57,7 @@ Description: NVIDIA binary kernel module (686 flavor)
 
 Package: nvidia-kernel-686-pae
 Architecture: i386
-Depends: ${misc:Depends}, nvidia-kernel-3.16.0-5-686-pae (>= 410.73)
+Depends: ${misc:Depends}, nvidia-kernel-3.16.0-5-686-pae (>= 440.36)
 Conflicts: nvidia-kernel-2.6-686-pae
 Replaces: nvidia-kernel-2.6-686-pae
 Description: NVIDIA kernel module for Linux (686-pae flavor)
@@ -75,7 +75,7 @@ Description: NVIDIA binary kernel module (686-pae flavor)
 
 Package: nvidia-kernel-amd64
 Architecture: amd64
-Depends: ${misc:Depends}, nvidia-kernel-3.16.0-5-amd64 (>= 410.73)
+Depends: ${misc:Depends}, nvidia-kernel-3.16.0-5-amd64 (>= 440.36)
 Conflicts: nvidia-kernel-2.6-amd64
 Replaces: nvidia-kernel-2.6-amd64
 Description: NVIDIA kernel module for Linux (amd64 flavor)
@@ -86,7 +86,7 @@ Description: NVIDIA kernel module for Linux (amd64 flavor)
 
 Package: nvidia-kernel-3.16.0-5-amd64
 Architecture: amd64
-Depends: linux-image-3.16.0-5-amd64, nvidia-kernel-support (>= 410.73)
+Depends: linux-image-3.16.0-5-amd64, nvidia-kernel-support (>= 440.36)
 Description: NVIDIA binary kernel module (amd64 flavor)
  This is a dummy control entry (amd64 flavor).
  The description in the final package will come from its control.template.
