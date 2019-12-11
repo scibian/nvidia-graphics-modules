@@ -1,3 +1,10 @@
+nvidia-graphics-modules (440.36+3.16.0+0sci8+nv440u2) scibian8+nv440; urgency=medium
+
+  * Revert "fix apt bug because of virtual package that ends with --v1"
+  * Bump Kernel ABI from 5 to 9
+
+ -- Pierre Trespeuch <pierre-externe.trespeuch@edf.fr>  Wed, 11 Dec 2019 11:36:10 +0100
+
 nvidia-graphics-modules (440.36+3.16.0+0sci8+nv440u1) scibian8+nv440; urgency=medium
 
   * Use nvidia-kernel-source 440.36
