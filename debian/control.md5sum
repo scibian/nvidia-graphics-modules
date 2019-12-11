@@ -1,7 +1,7 @@
-79ff367f3c97c78e18db503b8ce413b3  debian/control
-60ab6630f9cece59aabdbd0cbc132b03  debian/control.source
+a12d7ed72e60861b558dff15cd512f93  debian/control
+38133e6c9befbf11ea39b43f90ad7445  debian/control.source
 fffd77960b50d626b720a23ee441a9ed  debian/control.flavor
 3fb001417b44d7fcc3af963390d49a9f  debian/rules
-9e7d00cd1f64f9c0465180f0330550de  debian/rules.defs
+4f348b0661caa0bf7dbb80d22baf7343  debian/rules.defs
 #UPSTREAM_VERSION=440.36#
 #KERNEL_VERSION=3.16.0-9#
